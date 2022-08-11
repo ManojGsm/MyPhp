@@ -1,0 +1,156 @@
+body{
+    width:auto;
+    height: auto;
+    background-image: url(im3.jpeg);
+    background-size: cover;
+}
+#user{
+    position:absolute;
+    top:25%;
+    left:35%;
+    border: rgba(233, 238, 232, 0.808) solid 5px;
+    box-shadow:0 0 10px 10px rgb(241, 247, 241);
+    width: 700px;
+    display:inline;
+    height:600px;
+    background:transparent;
+    border-radius: 40px;
+    padding:0;
+}
+#user #id,#password{
+    display:flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left:50%;
+    top:40%;
+    height:60px;
+    transform: translate(-50%,-50%);
+
+}
+::selection{
+    background-color: blueviolet;
+}
+#user #id{
+    background-color:whitesmoke;
+    border-radius: 50px;
+}
+#user #password{
+    background-color:whitesmoke;
+    top:55%;
+    border-radius: 40px;
+}
+#user #login{
+    border:solid rgb(226, 226, 231);
+    left: 50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:70%;
+    outline: none;
+    width:100px;
+    font-size: 20px;
+    background: none;
+    padding: 10px;
+    border-radius: 10PX;
+    background-color: rgb(139, 145, 134);
+    text-transform: uppercase;
+    transition:0.5s;
+    cursor: grab;
+}
+#user #id #name,#password #pass{
+    border: rgb(243, 241, 237) solid 1px;
+    padding: 20px;
+    border-radius: 200px;
+    float:right;
+    background:rgb(226, 231, 221);
+    font-size: 25px;
+    cursor: pointer;
+
+}
+#user #id #text,#password #word{
+    border:none;
+    outline:none;
+    width: 0px;
+    font-size: 20px;
+    background: transparent;
+    float:left;
+}
+#user #id:hover>#name{
+    background: crimson;
+     color:white;
+}
+#user #id:hover >#text
+{
+width: 150px;
+transition: 0.3s;
+float: left;
+}#user #login:hover{
+        width:0px;
+        background-color: chartreuse;
+        border-radius: 100px;
+        padding: 10px;
+        font-size: 23px;
+        font-weight: bolder;
+    }  
+#user #password:hover>#pass{
+     background: crimson;
+     color:white;
+}
+#user #password:hover >#word
+{
+    width:150px;
+    transition: 0.3s;
+    float: left;
+    }
+    .im{
+        border-radius: 100px;
+        left:43%;
+        position: absolute;
+        top:5%;
+    }
+    #password #word::placeholder{
+        font-weight: bolder;
+        color: rgb(16, 3, 63);
+    }
+    #user #id #text::placeholder{
+        font-weight: bolder;
+        color: rgb(16, 3, 63);
+
+    }
+    
+    #user #login:checked{ 
+        cursor: grab;
+    }
+    #user #new ,#forg{
+        position:absolute;
+        top: 90%;
+        outline:none;
+        border-radius: 20px;
+        text-transform: capitalize;
+        font-size: 20px;
+        padding: 10px;
+        transform:translate(-50%,-50%);
+        transition:0.4s;
+
+    }
+    #user #new{
+        left:30%;
+        width:100px;
+    }
+    #user #forg{
+        left:75%;
+        width:200px;
+    }
+    #user #forg:hover{
+        background-color: chartreuse;
+        width:250px;
+        padding:10px;
+    }
+    #user #new:hover{
+        background-color: chartreuse;
+        width:150px;
+        padding:10px;
+
+    }
+
